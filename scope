@@ -1,0 +1,41 @@
+
+1. General Constrint-based Program Analysis, with a focus on type inference
+
+	[x] Propositions as Types (http://homepages.inf.ed.ac.uk/wadler/papers/propositions-as-types/propositions-as-types.pdf)
+
+	[x] Program Analysis as Constraint Solving (http://saurabh-srivastava.com/pubs/pldi08-pacs.pdf)
+
+	[x] Points-to Analysis in Almost Linear Time (http://www.cs.cornell.edu/courses/cs711/2005fa/papers/steensgaard-popl96.pdf)
+
+	[x] A Type System Equivalent to Flow Analysis (http://web.cs.ucla.edu/~palsberg/paper/toplas95-po.pdf)
+
+	[@] Lazy Type Inference and Program Analysis (https://www.sciencedirect.com/science/article/pii/0167642395000127)
+
+	[?] Dependence Analysis Through Type Inference (http://www.nuprl.org/documents/Kreitz/DependenceAnalysis.pdf)
+
+2. Information-flow Analysis via Dependent Type Systems, with a strong focus on dependent types
+
+	[?] Dependent Information Flow Types (http://ctp.di.fct.unl.pt/~luisal/resources/popl15-paper187.pdf)
+
+	[?] Verification of Information Flow and Access-Control Policies using Dependent Types (https://people.mpi-sws.org/~dg/papers/oakland11.pdf)
+
+	[?] A Type System for Value-dependent Information Flow Analysis (http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.710.9331&rep=rep1&type=pdf)
+
+	[?] Secure Information Flow Analysis with Mutable Dependent Types (https://people.ece.cornell.edu/af433/pdf/ferraiuolo-dac-17.pdf)
+
+	[?] Secure Distributed Programming with Value-Dependent Types (https://www.microsoft.com/en-us/research/wp-content/uploads/2011/09/icfp-camera-ready.pdf)
+
+	[?] Type-driven Repair for Information Flow Analysis (http://people.csail.mit.edu/polikarn/publications/lifty.pdf)
+
+3. Practical Type Systems-based Analyses Outside the Information Domain
+	[?] Types for Safe-locking (https://users.soe.ucsc.edu/~cormac/papers/esop99.pdf)
+
+	[?] Types for Atomicity (https://slang.soe.ucsc.edu/cormac/papers/atomic-toplas.pdf) 
+
+	[?] Type and Effect Systems (http://www.cs.ucla.edu/~palsberg/course/purdue/cs661/F01/papers/nielson-nielson-csd99.ps)
+
+	[?] Substructural Types for Program Analysis (https://link.springer.com/chapter/10.1007/978-3-540-78969-7_3)
+
+	[x] Linear Types Revised (http://homepages.inf.ed.ac.uk/wadler/papers/lineartaste/lineartaste-revised.pdf)
+
+	[?] The Two Dualities of Computation: Negative and Fractional Types (https://www.cs.indiana.edu/~sabry/papers/rational.pdf)
