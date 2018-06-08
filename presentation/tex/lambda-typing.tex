@@ -1,0 +1,130 @@
+
+\documentclass[preview=true]{standalone}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{cmll}
+\usepackage{mathtools}
+\usepackage{listings}
+
+\newcommand\lol{\stackrel{\mathclap{\normalfont\mbox{$\alpha$}}}{\multimap}}
+
+\newcommand\permarrow[1]{\stackrel{\mathclap{\normalfont\mbox{$#1$}}}{\longrightarrow}}
+\usepackage{xfrac}
+\newcommand{\onefth}[0]{\sfrac{1}{4}}
+\newcommand{\oneeth}[0]{\sfrac{1}{8}}
+% \newcommand{\expr}[0]{\mathbf{expr}}
+% \newcommand{\var}[0]{\mathbf{var}}
+\renewcommand{\o}[0]{\bullet}
+
+
+\begin{document}
+
+\Huge\begin{align*}
+	&\mathbf{let}\;\text{Song}^{A_1 \o A_1 \o (((E_1 \o F\#_1 \o A_1 \o F\#_1 \o C\#_2 \o H_1)\o(A_1 \o F\#_1 + A_0 \o F\#_0))^*)^* \o (A\#_0 \o A\#_0 \o F_0 \o F_0)} = \\
+	% &\quad play(A_1, \onefth); play(A_1, \onefth); \\ 
+	% &\quad twice\;\{ \\
+	% &\qquad twice\;\{ i \Rightarrow \\
+	% &\quad\qquad play(E_1, \onefth); play(F\#_1, \onefth); \\ 
+	% &\quad\qquad play(A_1, \onefth);play(F\#_1, \onefth); \\
+	% &\quad\qquad play(C\#_2, \onefth); play(H_1, \onefth); \\ 
+	% &\quad\qquad \mathbf{if}\;i\;==\;1\; \\
+	% &\qquad\qquad play(A_1, \onefth);play(F\#_1, \onefth); \\
+	% &\quad\qquad \mathbf{else} \\
+	% &\qquad\qquad play(A_0, \onefth);play(F\#_0, \onefth); \\
+	% &\qquad \} \\
+	% &\quad \} \\
+	% &\quad play(A\#_0, \oneeth);\;play(A\#_0, \oneeth); \\
+	% &\quad play(F_0, \oneeth);\;play(F_0, \oneeth); \\
+\end{align*}
+
+% \Huge\begin{prooftree}
+% 	\AxiomC{$x : \tau \in \Gamma$}
+% 	\RightLabel{(1)}
+% 	\UnaryInfC{$\Gamma \vdash x : \tau$}
+% \end{prooftree}
+
+% \begin{document}
+% \Huge\begin{prooftree}
+% 	\AxiomC{$\Gamma, x : \tau \vdash y : \sigma $}
+% 	\RightLabel{(2)}
+% 	\UnaryInfC{$\Gamma \vdash (\lambda x : \tau \o y) : (\tau \rightarrow \sigma)$}
+% \end{prooftree}
+
+% \begin{document}
+% \Huge\begin{align*}
+
+% \end{align*}
+
+% \Huge\begin{prooftree}
+% 	\AxiomC{$\Gamma, x : \tau \vdash y : \sigma $}
+% 	\RightLabel{(2)}
+% 	\UnaryInfC{$\Gamma \vdash (\lambda x : \tau \o y) : (\tau \rightarrow \sigma)$}
+% \end{prooftree}
+
+	% A \vdash y\;:\;\mathbf{ref}(\underline{\hspace{0.6em}} \times \mathbf{lam}(\alpha_1 \cdots& \alpha_n)\rightarrow(\alpha_{n+1}\cdots\alpha_{n+m})) \\
+	% \forall i \in \{ 1 \cdots n \}\;.\;A \vdash& f_i : \mathbf{ref}(\alpha_i) \\
+	% \forall j \in \{ 1 \cdots m \}\;.\;A \vdash& r_j : \mathbf{ref}(\alpha_{n+j}) \\
+	% \forall s \in S\;.\; A \vdash& \text{welltyped}(s) \\
+	% \hline
+	% A \vdash \text{welltyped}(x = \mathbf{fun}(f_1& \cdots f_n)\rightarrow(r_1 \cdots r_m))
+
+% \Large\begin{lstlisting}
+% saveToFile(f : File, d : Data; closed(f))
+%   : (unit; closed(f))
+% {
+%   // closed(f)
+%   open(f);
+%   // open(f)
+%   write(f,d);
+%   // open(f)
+%   close(f);
+%   // closed(f)
+% }
+% \end{lstlisting}
+
+% \huge\begin{align*}
+% &\text{average} :: \{l @ [\text{Int}]\;\mid\; \text{length}\;l > 0 \} \rightarrow \text{Int} \\
+% &\text{average}\;xs = \text{sum}\;xs\;\mathbf{div}\;\text{length}\;xs
+% \end{align*}
+
+
+
+%\text{Sub}&\text{typesOf}(\text{StaticType}(e_1))\;\cap \\ 
+%&\text{SubtypesOf}(\text{StaticType}(e_2)) = \o \Leftrightarrow e_1 \not\cong e_2
+
+% \Huge\begin{align*}
+
+% \end{align*}
+
+% \alpha ::=\;& \tau \times \lambda \\
+% \tau ::=\;& \bot\;|\;\mathbf{ref}(\alpha) \\
+% \lambda ::=\;& \bot\;|\;\mathbf{lam}(\alpha_1 \cdots \alpha_n)\rightarrow(\alpha_{n+1}\cdots\alpha_{n+m})
+
+% &\text{Given an expression }e, \text{ and fields }f\text{ and } g, \\
+% &\qquad e.f \not\cong e.g \Leftrightarrow \text{StaticTypeDecl}(f) \ne \text{StaticTypeDecl}(g)
+
+%\text{Gi}&\text{ven program } P, \\
+%&e_1 \not\cong e_2 \Leftrightarrow \forall o_1 \in \text{StaticType}(e_1), o_2 \in \text{StaticType}(e_2)\;.\\
+%&\qquad \{\;\text{Assign}(o_1, o_2), \text{Assign}(o_2, o_1)\;\} \cap P = \o
+
+\end{document}
+
+% \documentclass[tikz,border=10pt]{standalone}
+% \usetikzlibrary{positioning}
+% \tikzset{main node/.style={circle,fill=blue!20,draw,minimum size=1cm,inner sep=0pt},}
+% \begin{document}
+%   \begin{tikzpicture}
+%     \node[main node] (1) {$x$};
+%     \node[main node] (2) [right = 2cm  of 1]  {$y$};
+%     \node[main node] (3) [below right = 2cm and 0.8cm  of 1] {$pq$};
+%     \node[main node] (5) [below left = 2cm and 0.8cm of 3] {$r$};
+%     \node[main node] (6) [right = 2cm  of 5] {$s$};
+
+%     \path[draw,thick,->]
+%     (3) edge node {} (1)
+%     (3) edge node {} (2)
+%     (5) edge node {} (3)
+%     (6) edge node {} (3)
+%     ;
+% \end{tikzpicture}
+% \end{document}

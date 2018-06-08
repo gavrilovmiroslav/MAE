@@ -1,0 +1,117 @@
+title: Applying logic to programming languages
+
+don't use "this"
+
+make things more concrete
+
+usability concerns
+
+acknowledge limitations and research opportunities
+
+not very clear who is writing code (here's stuff the programmer has to know, here's the stuff the programmer doesn't need to understand)
+
+put the correspondence in better (long stretch in the middle doesn't really talk)
+
+4: as part of hilbert's program...
+
+5: abstraction = function definition
+
+6: explain lambda calculus
+
+7: way too fast, need examples. maybe not even talk about it "we can just evaluate using it", lambda expression as ast
+
+8: way too fast, somehow explain R and N; don't use semantic brackets, use X for sets, x for lambda, maybe just do asts, be sure to define functions
+previously was easier to follow 
+
+10: propositionS
+
+11: difference between intuitionistic and classical logic; show examples of formula and types
+don't say "we can see..."
+
+12: _linear_ classical
+cut elimination not defined
+
+14: highlight area of interest on the slide (continous problem)!!!!!
+church used iota
+sigma -> tau2 or something like that
+dry inference reading
+
+17: type checking != constraint solving
+
+18: worst of all things, change notation, highlight parts, show on example
+this is actually making a call-graph, which will be input to other things, like method inlining
+
+19: more of the same
+
+22: this works only if you trust the type-system -- this is a real concern
+
+18-21: throw them out!
+
+24: similarly, structure it as "types help us understand the program, and that information allows us to do inlining or redundant-load";
+this is the part of the talk that diverges
+leave weakness below formulas
+
+26: use simpler type inference rule
+hard to read different points separated with semicolons; 
+
+27: ditch loss of precision, we don't need that
+find the core of the paper, cut out as much as possible
+* ditch or formulate andersen as type-inference (aiken formulates it as a type system)
+
+28: wild umlaut
+
+30: no flow here
+
+31: need to show a judgement, explain effect of structural rules
+sequent -> assumption, anatomy of a judgement in natural deduction
+pritnln -> println
+
+32: demonstrate proofs by proof trees
+
+34: make connection between type checking and type-based program analysis more clear or eliminate it
+
+35: kathryn mckenlie et al. reference counting and garbage collection are on a spectrum, and if reference counting is linear logic, what is garbage collection?
+reference counting is garbage collection, says chandra.
+explain how linear types are optimizations
+
+36: classical vs intuitionistic, explain better, label collumns
+of course! why not? -- introduce or erase
+highight the point of session types
+
+38: example, it's livelock
+
+
+40: don't go into "going back to where we left off..."
+
+40,41: explain examples! show terms and types
+
+41: x -> n
+lambda a. lambda b. sigma not lambda n.
+
+42: missing brace for printIfManager
+footnote cutoff
+this is like a refinement type, mention that maybe
+
+43: show the lattice, remember the word "permission", "declassification", 
+
+51: "bigger, better, faster, stronger..."
+
+52,53: process not nicely explained
+
+53: show example or don't put it 50min in
+
+61: need examples
+
+68: doesn't support the point, a contrived proof by construction
+
+72: barRing
+draw a picture of category theory stuff
+
+73: have conclusion
+what we saw, a summary, a point of the talk
+do some synthesis, where are we as a community, where can we go from here?
+
+go more into propositions-as-types more, mention subtyping or mention why you're avoiding mentioning it
+
+more pictures and diagrams
+

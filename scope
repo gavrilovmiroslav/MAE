@@ -11,8 +11,6 @@
 
 	[@] Lazy Type Inference and Program Analysis (https://www.sciencedirect.com/science/article/pii/0167642395000127)
 
-	[?] Dependence Analysis Through Type Inference (http://www.nuprl.org/documents/Kreitz/DependenceAnalysis.pdf)
-
 2. Information-flow Analysis via Dependent Type Systems, with a strong focus on dependent types
 
 	[?] Dependent Information Flow Types (http://ctp.di.fct.unl.pt/~luisal/resources/popl15-paper187.pdf)
