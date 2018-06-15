@@ -9,33 +9,47 @@
 \newcommand\lol{\stackrel{\mathclap{\normalfont\mbox{$\alpha$}}}{\multimap}}
 
 \newcommand\permarrow[1]{\stackrel{\mathclap{\normalfont\mbox{$#1$}}}{\longrightarrow}}
-\usepackage{xfrac}
-\newcommand{\onefth}[0]{\sfrac{1}{4}}
-\newcommand{\oneeth}[0]{\sfrac{1}{8}}
-% \newcommand{\expr}[0]{\mathbf{expr}}
-% \newcommand{\var}[0]{\mathbf{var}}
-\renewcommand{\o}[0]{\bullet}
-
 
 \begin{document}
 
-\Huge\begin{align*}
-	&\mathbf{let}\;\text{Song}^{A_1 \o A_1 \o (((E_1 \o F\#_1 \o A_1 \o F\#_1 \o C\#_2 \o H_1)\o(A_1 \o F\#_1 + A_0 \o F\#_0))^*)^* \o (A\#_0 \o A\#_0 \o F_0 \o F_0)} = \\
-	% &\quad play(A_1, \onefth); play(A_1, \onefth); \\ 
-	% &\quad twice\;\{ \\
-	% &\qquad twice\;\{ i \Rightarrow \\
-	% &\quad\qquad play(E_1, \onefth); play(F\#_1, \onefth); \\ 
-	% &\quad\qquad play(A_1, \onefth);play(F\#_1, \onefth); \\
-	% &\quad\qquad play(C\#_2, \onefth); play(H_1, \onefth); \\ 
-	% &\quad\qquad \mathbf{if}\;i\;==\;1\; \\
-	% &\qquad\qquad play(A_1, \onefth);play(F\#_1, \onefth); \\
-	% &\quad\qquad \mathbf{else} \\
-	% &\qquad\qquad play(A_0, \onefth);play(F\#_0, \onefth); \\
-	% &\qquad \} \\
-	% &\quad \} \\
-	% &\quad play(A\#_0, \oneeth);\;play(A\#_0, \oneeth); \\
-	% &\quad play(F_0, \oneeth);\;play(F_0, \oneeth); \\
-\end{align*}
+% \begin{align*}
+% 	&e \;::=\; x \;\mid\; \lambda\;x\;:\;\tau\;.\;e \;\mid\; e_1\; e_2 \\
+% 	&\tau \;::=\; \tau_1 \rightarrow \tau_2 \;\mid\; B
+% \end{align*}
+
+% \begin{align*}
+% 	&(\lambda f \;:\; \text{Bool} \rightarrow \text{Bool} \;.\; &\lambda x \;:\; \text{Bool} \;.\; f\;x\;\mathbf{true})\;\text{and}\;\mathbf{false} \\
+% 	&=_\beta &(\lambda x \;:\; \text{Bool} \;.\; \text{and}\;x\;\mathbf{true})\;\mathbf{false} \\
+% 	&=_\beta\; &\text{and}\;\mathbf{false}\;\mathbf{true} \\
+% 	&=_{\beta^*}\; &\mathbf{false}
+% \end{align*}
+
+%\mathbf{sqrd}\;\equiv\;\lambda\;x\;:\;\mathbb{N}\;.\;\mathbf{mult}\;x\;x
+%\mathbf{sq}&\mathbf{rd}\;4\; \\
+%	&\equiv (\lambda\;x\;:\;\mathbb{N}\;.\;\mathbf{mult}\;x\;x)\;4\; \\
+%	&=_{\beta} \mathbf{mult}\;4\;4\; \\
+%	&=_{\beta^{*}} 16
+
+\begin{center}
+\begin{tabular}{ l c r }
+ Logic & Calculus & Categorical Semantics \\
+\hline
+ Intuitionistic & $\lambda_{\rightarrow}$ & Cartesian Closed Categories \\ 
+ Classical & $\lambda\mu$ & Topos in Cartesian Closed Categories \\  
+ Intuitionistic Predicate & $\lambda\Pi$ & Indexed Slice Category Fibrations \\    
+ Linear Classical & $CP$ & $*$-Autonomous Categories \\
+\end{tabular}
+\end{center}
+
+\iffalse
+A \multimap B: &\;\text{replace process A with process B} \\
+B \otimes C: &\;\text{do process B, followed by C} \\
+B\;\&\;C: &\;\text{choose between process B and process C} \\
+B \oplus C: &\;\text{non-deterministically do process B or process C} \\
+B \parr C: &\;\text{do processes B and C \emph{in parallel}} \\
+!A\;: &\;\text{server response} \\
+?A\;: &\;\text{client request}
+\fi
 
 % \Huge\begin{prooftree}
 % 	\AxiomC{$x : \tau \in \Gamma$}
